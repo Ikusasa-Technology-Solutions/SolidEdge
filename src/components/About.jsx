@@ -59,7 +59,7 @@ const About = () => {
 
             <div className="animate-fade-in">
               <img
-                src="https://images.pexels.com/photos/5691540/pexels-photo-5691540.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/tv20 solid.jpg"
                 alt="Craftsman at work"
                 className="w-full h-96 object-cover rounded-lg shadow-2xl"
               />

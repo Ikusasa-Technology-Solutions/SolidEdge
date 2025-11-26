@@ -21,11 +21,11 @@ const Hero = () => {
       {/* Hero Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://images.pexels.com/photos/2251247/pexels-photo-2251247.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
-          alt="Custom Kitchen Cabinetry"
+          src="/t-9 solid.jpg" 
+          alt="Landing Background"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-primary/70"></div>
+        <div className="absolute inset-0 bg-primary/70"></div> {/* Overlay for readability */}
       </div>
 
       {/* Hero Content */}
@@ -40,7 +40,7 @@ const Hero = () => {
           Custom kitchen cabinetry and bespoke furniture designed to perfection. 
           Where traditional craftsmanship meets modern precision.
         </p>
-        
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <button
             onClick={scrollToPortfolio}
