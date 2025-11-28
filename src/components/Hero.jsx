@@ -17,36 +17,31 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Hero Background Image */}
-      <div className="absolute inset-0">
+    <section id="home" className="relative min-h-screen flex items-center justify-between overflow-hidden">
+      {/* Left Side - Image */}
+      <div className="w-full sm:w-1/2 h-full">
         <img
-          src="/t-9 solid.jpg" 
-          alt="Landing Background"
+          src="https://images.pexels.com/photos/2251247/pexels-photo-2251247.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+          alt="Custom Kitchen Cabinetry"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-primary/70"></div> {/* Overlay for readability */}
       </div>
 
-      {/* Hero Content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 animate-fade-in-up">
-        <h1 className="font-rubik font-medium text-5xl md:text-7xl lg:text-8xl mb-6 text-text">
-          Solid Edge
+      {/* Right Side - Welcome Text and Buttons */}
+      <div className="w-full sm:w-1/2 flex flex-col items-center justify-center px-8 py-12 sm:py-0 text-center sm:text-left">
+        <h1 className="font-rubik font-medium text-5xl md:text-6xl lg:text-3xl mb-6 text-text">
+          Welcome to Solid Edge
         </h1>
-        <p className="font-poppins text-xl md:text-2xl lg:text-3xl mb-8 text-text/90">
-          Crafting Excellence in Every Cut
-        </p>
-        <p className="font-poppins text-lg md:text-xl mb-12 text-text/80 max-w-2xl mx-auto leading-relaxed">
-          Custom kitchen cabinetry and bespoke furniture designed to perfection. 
-          Where traditional craftsmanship meets modern precision.
+        <p className="font-poppins text-lg md:text-2xl lg:text-3xl mb-8 text-text/90">
+          Your vision, our craftsmanship. We build custom pieces that bring your ideas to life and turn your house into a home.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
           <button
             onClick={scrollToPortfolio}
             className="group bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 flex items-center gap-2 hover:scale-105"
           >
-            View Our Work
+            View Catalogue
             <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
           </button>
           <button
