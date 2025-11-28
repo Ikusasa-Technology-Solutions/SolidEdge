@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import logo from '../Img/SE_LOGO.jpg';
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,12 +29,22 @@ const Header = () => {
     }`}>
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
-          <div 
-            className="font-rubik font-medium text-2xl cursor-pointer hover:text-accent transition-colors duration-300"
+
+          {/* Logo + Name */}
+          <button
             onClick={() => scrollToSection('hero')}
+            className="flex items-center space-x-3 focus:outline-none"
           >
-            Solid Edge
-          </div>
+            <img 
+              src={logo}
+              alt="Solid Edge Logo"
+              className="h-20 w-20 object-contain"
+            />
+        <span className="font-rubik font-medium text-2xl transition-colors duration-300">
+  Solid <span className="text-red-500">Edge</span>
+</span>
+
+          </button>
 
           {/* Desktop Navigation */}
           <ul className="hidden md:flex space-x-8">
